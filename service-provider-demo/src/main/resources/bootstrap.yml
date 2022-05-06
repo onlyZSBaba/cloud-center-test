@@ -1,0 +1,28 @@
+server:
+  port: 18081
+  servlet:
+    context-path: /provider
+NACOS_SERVER: 162.14.121.167:8848
+
+spring:
+  application:
+    name: service-provider-demo
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_SERVER}
+      config:
+        server-addr: ${NACOS_SERVER}
+        file-extension: yaml
+        namespace: 57f1b3c9-056c-41b2-8e9a-eb0a5bf9c4b2
+        group: TEST_GROUP
+        shared-configs[0]:
+          data-id: service-provider-demo-data-test.yaml
+          group: TEST_GROUP
+  profiles:
+    active: test
+
+
+
+
+

@@ -1,0 +1,14 @@
+server:
+  port: 18080
+  servlet:
+    context-path: /consumer
+
+spring:
+  application:
+    name: service-consumer-demo
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 162.14.121.167:8848
+
+

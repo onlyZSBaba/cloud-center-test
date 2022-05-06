@@ -1,0 +1,23 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /gateway
+NACOS_SERVER: 162.14.121.167:8848
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_SERVER}
+      config:
+        server-addr: ${NACOS_SERVER}
+
+    gateway:
+      enabled: true
+      discovery:
+        locator:
+          enabled: true #开启从注册中心动态创建路由的功能，利用微服务名进行路由
+          lower-case-service-id: true #匹配服务的小写名
+
