@@ -9,11 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
-    <!--<modules>
+    <modules>
         <module>service-provider-demo</module>
         <module>service-consumer-demo</module>
         <module>gateway</module>
-    </modules>-->
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

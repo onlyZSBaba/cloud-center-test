@@ -2,7 +2,6 @@ server:
   port: 18081
   servlet:
     context-path: /provider
-NACOS_SERVER: 162.14.121.167:8848
 
 spring:
   application:
@@ -19,6 +18,7 @@ spring:
         shared-configs[0]:
           data-id: service-provider-demo-data-test.yaml
           group: TEST_GROUP
+          refresh: true
   profiles:
     active: test
 

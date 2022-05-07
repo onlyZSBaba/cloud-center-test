@@ -2,7 +2,7 @@ server:
   port: 9999
   servlet:
     context-path: /gateway
-NACOS_SERVER: 162.14.121.167:8848
+#NACOS_SERVER: 162.14.121.167:8848
 
 spring:
   application:
